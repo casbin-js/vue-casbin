@@ -1,4 +1,4 @@
-# vue-authz
+# vue-casbin
 
 This package allows you to integrate [Casbin](https://github.com/casbin/node-casbin) (An authorization library) with
 your Vue 3 application.
@@ -6,11 +6,11 @@ your Vue 3 application.
 ## Installation
 
 ```bash
-npm install vue-authz
+npm install vue-casbin
 # or
-yarn add vue-authz
+yarn add vue-casbin
 # or
-pnpm add vue-authz
+pnpm add vue-casbin
 ```
 
 ## Getting started
@@ -22,7 +22,7 @@ new [Vue Composition API](https://v3.vuejs.org/guide/composition-api-introductio
 
 ```typescript
 import { createApp } from 'vue';
-import CasbinPlugin from 'vue-authz';
+import CasbinPlugin from 'vue-casbin';
 import { newEnforcer } from 'casbin';
 
 const enforcer = newEnforcer('model string', 'policy string');
@@ -66,7 +66,7 @@ And inject it with `ENFORCER_KEY`
 </template>
 
 <script>
-import { ENFORCER_KEY } from 'vue-authz';
+import { ENFORCER_KEY } from 'vue-casbin';
 
 export default {
   inject: {
@@ -87,7 +87,7 @@ You can also use `useEnforcer` function.
 </template>
 
 <script>
-import { useEnforcer } from 'vue-authz';
+import { useEnforcer } from 'vue-casbin';
 
 export default {
   setup() {
@@ -108,7 +108,7 @@ This project is licensed under the [Apache 2.0 license](LICENSE).
 
 If you have any issues or feature requests, please contact us. PR is welcomed.
 
-- https://github.com/casbin.js/vue-authz/issues
+- https://github.com/casbin.js/vue-casbin/issues
 - zxilly@outlook.com
 - Tencent QQ
   group: [546057381](//shang.qq.com/wpa/qunwpa?idkey=8ac8b91fc97ace3d383d0035f7aa06f7d670fd8e8d4837347354a31c18fac885)
