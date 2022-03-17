@@ -31,7 +31,7 @@ module.exports = {
 
     output: {
         libraryTarget: 'module',
-        filename: 'vue-authz.js',
+        filename: 'vue-casbin.js',
         path: path.resolve(__dirname, 'dist'),
     },
     experiments: { outputModule: true },
